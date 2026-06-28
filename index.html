@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Zywin Flipbook</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/page-flip/dist/js/page-flip.browser.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div id="loader">Loading 0%</div>
+
+  <main class="app">
+    <section class="book-wrap">
+      <div id="flipbook">
+        <div class="page"><img src="pages/page1.png" alt="Page 1"></div>
+        <div class="page"><img src="pages/page2.png" alt="Page 2"></div>
+        <div class="page"><img src="pages/page3.png" alt="Page 3"></div>
+        <div class="page"><img src="pages/page4.png" alt="Page 4"></div>
+        <div class="page"><img src="pages/page5.png" alt="Page 5"></div>
+        <div class="page"><img src="pages/page6.png" alt="Page 6"></div>
+        <div class="page"><img src="pages/page7.png" alt="Page 7"></div>
+        <div class="page"><img src="pages/page8.png" alt="Page 8"></div>
+        <div class="page"><img src="pages/page9.png" alt="Page 9"></div>
+        <div class="page"><img src="pages/page10.png" alt="Page 10"></div>
+        <div class="page"><img src="pages/page11.png" alt="Page 11"></div>
+        <div class="page"><img src="pages/page12.png" alt="Page 12"></div>
+      </div>
+    </section>
+
+    <div class="nav-controls">
+      <button id="prevBtn" class="nav-btn">Back</button>
+      <span id="pageCounter">1 / 12</span>
+      <button id="nextBtn" class="nav-btn">Next</button>
+    </div>
+  </main>
+
+  <audio id="pageSound" src="page-turn.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
